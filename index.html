@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-Flowers | Premium Online Gul Do‘koni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                        url('https://images.unsplash.com/photo-1490750967868-88aa4486c946');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 56px;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 20px;
+            margin: 20px 0 30px;
+            max-width: 600px;
+        }
+        .btn-main {
+            padding: 14px 30px;
+            background-color: #c2185b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        nav a {
+            color: #fff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        section {
+            padding: 80px 60px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #c2185b;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #2e7d32;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .about {
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+        }
+        @media(max-width: 768px) {
+            header h1 { font-size: 38px; }
+            section { padding: 60px 25px; }
+            .about { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Z-Flowers</div>
+    <div>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#products">Gullar</a>
+        <a href="#about">Biz haqimizda</a>
+    </div>
+</nav>
+
+<header id="home">
+    <h1>Premium Gul Do‘koni</h1>
+    <p>Sevgi, mehr va nafislikni ifodalovchi eng sifatli guldastalar — Z-Flowers bilan</p>
+    <a href="#products" class="btn-main">Kolleksiyani ko‘rish</a>
+</header>
+
+<section id="products">
+    <div class="section-title">
+        <h2>Bizning kolleksiyamiz</h2>
+        <p>Bir xil stil va professional suratlar</p>
+    </div>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Atirgul">
+            <div class="product-info">
+                <h3>Qizil atirgul guldastasi</h3>
+                <div class="price">180 000 so‘m</div>
+                <a href="#" class="btn">Buyurtma</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" alt="Lola">
+            <div class="product-info">
+                <h3>Lola premium to‘plami</h3>
+                <div class="price">150 000 so‘m</div>
+                <a href="#" class="btn">Buyurtma</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df" alt="Orxideya">
+            <div class="product-info">
+                <h3>Oq orxideya</h3>
+                <div class="price">230 000 so‘m</div>
+                <a href="#" class="btn">Buyurtma</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div>
+        <h2>Z-Flowers haqida</h2>
+        <p>Z-Flowers — zamonaviy dizayn, bir xil stil va yuqori sifatli gullarni taklif etuvchi online gul do‘koni. Biz har bir buyurtmaga professional floristlar yondashuvi bilan ishlaymiz.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Flower shop">
+</section>
+
+<footer>
+    <p>© 2025 Z-Flowers | Premium Online Gul Do‘koni</p>
+</footer>
+
+</body>
+</html>
